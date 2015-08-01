@@ -39,13 +39,13 @@ $('.smobitrigger').smplmnu({
 Requires jQuery 1.8+
 
 ####Tested Browsers:
-Chrome
-Firefox
-Safari
-Opera
-IE7+
-Android Browser
-iOS Safari
+- Chrome
+- Firefox
+- Safari
+- Opera
+- IE7+
+- Android Browser
+- iOS Safari
 
 ***********************************************************************
 ## Version
