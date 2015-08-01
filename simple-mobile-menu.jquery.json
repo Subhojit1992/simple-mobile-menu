@@ -1,0 +1,35 @@
+{
+    "name": "simple-mobile-menu",
+    "title": "Simple Mobile Menu",
+    "description": "Simple responsive mobile menu",
+    "keywords": [
+        "responsive-menu",
+        "mobile-menu",
+        "slide-menu",
+        "off-canvas-menu"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "subhojit mondal author",
+        "url": "https://github.com/Subhojit1992"
+    },
+    "maintainers": [
+        {
+            "name": "Subhojit Mondal",
+            "email": "subhojit1992.mondal@gmail.com",
+            "url": "http://iamsubhojit.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/Subhojit1992/simple-mobile-menu/blob/master/LICENSE"
+        }
+    ],
+    "homepage": "https://github.com/Subhojit1992/simple-mobile-menu",
+    "docs": "https://github.com/Subhojit1992/simple-mobile-menu#simple-mobile-menu",
+    "download": "https://github.com/Subhojit1992/simple-mobile-menu/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
+}
