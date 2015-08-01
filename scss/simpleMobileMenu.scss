@@ -1,0 +1,159 @@
+//colors
+$white: #fff;
+$black_18: rgba(0, 0, 0, 0.18);
+$black_29: rgba(0, 0, 0, 0.29);
+$black_79: rgba(0, 0, 0, 0.79);
+$color_van_cleef_approx: #441b0a;
+$color_golden_dream_approx: rgb(234, 214, 54);
+
+//fonts
+$font_0: Source Sans Pro;
+$font_1: sans-serif;
+
+//urls
+$url_0: url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+
+//@extend-elements
+//original selectors
+//.smobitrigger span, .mnuclose span
+%extend_1 {
+	font: 0/0 a;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+	color: transparent;
+}
+
+
+@import $url_0;
+html {
+	margin: 0;
+	padding: 0;
+	font-family: $font_0, $font_1;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+* {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: inherit;
+	&:before {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: inherit;
+	}
+	&:after {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: inherit;
+	}
+}
+.cf {
+	*zoom: 1;
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font_0, $font_1;
+}
+.smobitrigger {
+	display: none;
+}
+.mnuclose {
+	display: none;
+}
+header {
+	background: $color_van_cleef_approx;
+}
+.logo {
+	float: left;
+}
+.navigation {
+	float: right;
+	nav ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				color: $white;
+				font-weight: 600;
+				display: inline-block;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 15px 20px;
+				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: 0.5s;
+				&:hover {
+					background: $color_golden_dream_approx;
+					color: $color_van_cleef_approx;
+				}
+			}
+		}
+	}
+}
+@media all and(max-width : 768px) {
+	.smobitrigger {
+		display: inline-block;
+		color: $white;
+		font-size: 30px;
+		line-height: 12px;
+		padding: 10px;
+		span {
+			@extend %extend_1;
+		}
+	}
+	.mnuclose {
+		display: inline-block;
+		font-size: 20px;
+		padding: 10px 20px;
+		width: 100%;
+		background: $black_18;
+		span {
+			@extend %extend_1;
+		}
+	}
+	.mobimenu {
+		list-style: none;
+		padding: 20px;
+		margin: 0;
+		width: 210px;
+		position: fixed;
+		height: 100%;
+		top: 0;
+		right: -250px;
+	}
+	.mnuopn {
+		right: 0 !important;
+	}
+	.ovrActv {
+		position: fixed;
+		background: $black_79;
+		width: 100%;
+		height: 100%;
+		z-index: 9998;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.5s;
+	}
+	.navigation nav ul {
+		padding-bottom: 40px;
+		overflow-y: auto;
+		li {
+			width: 100%;
+			a {
+				width: 100%;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				&:hover {
+					background: $black_29;
+				}
+			}
+		}
+	}
+}
