@@ -1,6 +1,8 @@
 # Simple Mobile Menu
 Get started with the simple responsive menu with the "Simple Mobile Menu" jQuery plugin. This is very easy to use and easily customizable code base. You have to maintain the very easy HTML structure for this plugin.
 
+- http://iamsubhojit.com/simple-mobile-menu
+
 ## How to use
 Include the CSS( customize or rewrite the style as per your web or application UI ) & JS accordingly on your site.
 Please use the "simpleMobileMenu.js" after your jquery (use the latest one). 
